@@ -18,14 +18,19 @@ Upload your PDF → Ask a question → Get a direct answer from the document
 ## Architecture Overview
 
 React + Chakra UI (Frontend)
-↓
+        ↓
 FastAPI (Backend API)
-↓
-LangChain Agent (Tools: RAG, Calculator, Summarizer)
-↓
-Chroma Vectorstore (PDF chunks)
-↓
-Vertex AI Embeddings + Gemini 2.5 Flash Lite
+        ↓
+LangChain Agent
+  ├─ RAG (PDF Q&A via Chroma Vectorstore)
+  ├─ Calculator Tool
+  └─ Summarizer Tool
+        ↓
+Chroma Vectorstore (stores PDF chunks)
+        ↓
+Vertex AI
+  ├─ Embeddings: text-embedding-005
+  └─ LLM: Gemini 2.5 Flash Lite
 
 ---
 
