@@ -11,6 +11,7 @@ An interactive full-stack application that allows users to upload PDF-based fina
 ## Demo
 
 Upload your PDF → Ask a question → Get a direct answer from the document  
+![Screenshot](./demo.png)
 
 ---
 
